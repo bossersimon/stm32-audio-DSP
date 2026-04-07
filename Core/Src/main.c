@@ -49,7 +49,14 @@ I2C_HandleTypeDef hi2c1;
 I2S_HandleTypeDef hi2s3;
 
 /* USER CODE BEGIN PV */
-int16_t dacDATA[BUFFER_SIZE];
+//int16_t adcData[BUFFER_SIZE]; // buffers to hold DMA read/writes
+int16_t dacData[BUFFER_SIZE];
+//static volatile int16_t *adcBufPtr; // pointers for DMA
+static volatile int16_t *dacBufPtr = &dacData[0];
+
+static int16_t inBuf[CAPACITY];   // input/output circular buffers
+static int16_t outBuf[CAPACITY];
+
 static volatile int16_t *inBufHead;
 static volatile int16_t *inBufTail;
 static int16_t *inBufEnd;
@@ -57,9 +64,6 @@ static int16_t *inBufEnd;
 static volatile int16_t *outBufHead;
 static volatile int16_t *outBufTail;
 static int16_t *outBufEnd;
-
-static int16_t inBuf[CAPACITY];
-static int16_t outBuf[CAPACITY];
 
 static int inDataReadyFlag = 0;
 static int outDataReadyFlag = 0;
