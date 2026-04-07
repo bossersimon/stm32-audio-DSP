@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "openocd-flash",
+            "type": "shell",
+            "command": "sudo openocd -f interface/stlink-v2.cfg -f target/stm32f4x.cfg -c \"program build/Debug/${workspaceFolderBasename}.elf verify reset exit\"",
+            "problemMatcher": []
+        }
+    ]
+}
