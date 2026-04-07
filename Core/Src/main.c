@@ -18,6 +18,8 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "stm32f4xx_hal_def.h"
+#include "stm32f4xx_hal_i2s_ex.h"
 #include "usb_device.h"
 #include <stdint.h>
 
@@ -56,6 +58,7 @@ static volatile int16_t *dacBufPtr = &dacData[0];
 
 static int16_t inBuf[CAPACITY];   // input/output circular buffers
 static int16_t outBuf[CAPACITY];
+uint8_t dataReadyFlag;
 
 static volatile int16_t *inBufHead;
 static volatile int16_t *inBufTail;
@@ -81,6 +84,18 @@ static void MX_I2S3_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 static float generate_DMA_block() {  // emulates input DMA; generates input samples to be put on the buffer
+}
+
+// half full
+void HAL_I2SEx_TxRxHalfCpltCallback(I2S_HandleTypeDef *hi2s) {
+
+
+}
+
+// other half full
+void HAL_I2SEx_TxRxCpltCallback(I2S_HandleTypeDef *hi2s) {
+
+
 }
 
 /* USER CODE END 0 */
@@ -118,6 +133,7 @@ int main(void)
   MX_I2S3_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
+  HAL_StatusTypeDef status = HAL_I2SEx_TransmitReceive_DMA(&hi2s3, (uint16_t *) dacData, (uint16_t *) NULL, BUFFER_SIZE);
 
   /* USER CODE END 2 */
 
