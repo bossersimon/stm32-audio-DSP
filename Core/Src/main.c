@@ -88,13 +88,15 @@ static float generate_DMA_block() {  // emulates input DMA; generates input samp
 
 // half full
 void HAL_I2SEx_TxRxHalfCpltCallback(I2S_HandleTypeDef *hi2s) {
-
+  // manual input, and move output pointer
+  float dumdum = generate_DMA_block();
 
 }
 
 // other half full
 void HAL_I2SEx_TxRxCpltCallback(I2S_HandleTypeDef *hi2s) {
-
+    // manual input, and move output pointer
+    float dumdum = generate_DMA_block();
 
 }
 
@@ -142,6 +144,10 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+    if (dataReadyFlag) {
+      // DSP shit 
+
+    } 
 
     /* USER CODE BEGIN 3 */
   }
