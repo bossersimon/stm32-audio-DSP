@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "usb_device.h"
+#include <stdint.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -32,7 +33,9 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define BUFFER_SIZE 128 // double buffer size
+#define CAPACITY 1024   // circular buffer size
+#define WINDOW_SIZE 256 // FFT size
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -46,7 +49,20 @@ I2C_HandleTypeDef hi2c1;
 I2S_HandleTypeDef hi2s3;
 
 /* USER CODE BEGIN PV */
+int16_t dacDATA[BUFFER_SIZE];
+static volatile int16_t *inBufHead;
+static volatile int16_t *inBufTail;
+static int16_t *inBufEnd;
 
+static volatile int16_t *outBufHead;
+static volatile int16_t *outBufTail;
+static int16_t *outBufEnd;
+
+static int16_t inBuf[CAPACITY];
+static int16_t outBuf[CAPACITY];
+
+static int inDataReadyFlag = 0;
+static int outDataReadyFlag = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -60,6 +76,8 @@ static void MX_I2S3_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+static float generate_DMA_block() {  // emulates input DMA; generates input samples to be put on the buffer
+}
 
 /* USER CODE END 0 */
 
