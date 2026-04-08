@@ -51,14 +51,17 @@ I2C_HandleTypeDef hi2c1;
 I2S_HandleTypeDef hi2s3;
 
 /* USER CODE BEGIN PV */
-//int16_t adcData[BUFFER_SIZE]; // buffers to hold DMA read/writes
+int16_t adcData[BUFFER_SIZE]; // buffers to hold DMA read/writes
 int16_t dacData[BUFFER_SIZE];
-//static volatile int16_t *adcBufPtr; // pointers for DMA
+static volatile int16_t *adcBufPtr; // pointers for DMA
 static volatile int16_t *dacBufPtr = &dacData[0];
 
 static int16_t inBuf[CAPACITY];   // input/output circular buffers
 static int16_t outBuf[CAPACITY];
 uint8_t dataReadyFlag;
+
+static float t;
+static uint8_t sample_rate;
 
 static volatile int16_t *inBufHead;
 static volatile int16_t *inBufTail;
@@ -83,20 +86,35 @@ static void MX_I2S3_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-static float generate_DMA_block() {  // emulates input DMA; generates input samples to be put on the buffer
+static void generate_DMA_block(int16_t* ptr) {  // emulates input DMA; generates input samples to be put on the buffer
+  // keeps track of time
+
+
 }
 
 // half full
 void HAL_I2SEx_TxRxHalfCpltCallback(I2S_HandleTypeDef *hi2s) {
-  // manual input, and move output pointer
-  float dumdum = generate_DMA_block();
 
+  adcBufPtr = &adcData[0];
+  dacBufPtr = &dacData[0];
+
+  generate_DMA_block(adcBufPtr); // generates samples on the buffer
+
+  dataReadyFlag = 1;
 }
 
 // other half full
 void HAL_I2SEx_TxRxCpltCallback(I2S_HandleTypeDef *hi2s) {
-    // manual input, and move output pointer
-    float dumdum = generate_DMA_block();
+
+    adcBufPtr = &adcData[BUFFER_SIZE/2];
+    dacBufPtr = &dacData[BUFFER_SIZE/2];
+
+    generate_DMA_block(adcBufPtr); // generates samples on the buffer
+
+    dataReadyFlag = 1;
+}
+
+void processData() {
 
 }
 
@@ -136,7 +154,7 @@ int main(void)
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
   HAL_StatusTypeDef status = HAL_I2SEx_TransmitReceive_DMA(&hi2s3, (uint16_t *) dacData, (uint16_t *) NULL, BUFFER_SIZE);
-
+  t = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -145,8 +163,8 @@ int main(void)
   {
     /* USER CODE END WHILE */
     if (dataReadyFlag) {
-      // DSP shit 
-
+      // DSP shit
+      processData();
     } 
 
     /* USER CODE BEGIN 3 */
