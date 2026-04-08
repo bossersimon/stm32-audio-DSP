@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "math.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -35,6 +35,11 @@
 #define BUFFER_SIZE 128 // double buffer size
 #define CAPACITY 1024   // circular buffer size
 #define WINDOW_SIZE 256 // FFT size
+#define AUDIO_SMPLRT 48000 // audio sample rate (temporary)
+
+#ifndef M_PI
+#    define M_PI 3.14159265358979323846
+#endif
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -54,12 +59,11 @@ int16_t dacData[BUFFER_SIZE];
 static volatile int16_t *adcBufPtr; // pointers for DMA
 static volatile int16_t *dacBufPtr = &dacData[0];
 
+static double phase = 0;
+
 static int16_t inBuf[CAPACITY];   // input/output circular buffers
 static int16_t outBuf[CAPACITY];
 uint8_t dataReadyFlag;
-
-static float t;
-static uint8_t sample_rate;
 
 static volatile int16_t *inBufHead;
 static volatile int16_t *inBufTail;
@@ -85,10 +89,18 @@ static void MX_I2S3_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-static void generate_DMA_block(int16_t* ptr) {  // emulates input DMA; generates input samples to be put on the buffer
-  // keeps track of time
+static void generate_DMA_block(volatile int16_t* ptr) {  // emulates input DMA; generates input samples to be put on the buffer
+  
+  uint16_t freq = 200; // generated frequency
+  double dp = 2.0 * M_PI * freq / AUDIO_SMPLRT;
 
-
+  for (int i = 0; i< BUFFER_SIZE/2; i++) {
+    *ptr = (int16_t)(sin(phase)* 32767);
+    phase += dp;
+    if (phase > 2.0 * M_PI)
+      phase -= 2.0 * M_PI;
+    ptr++;
+  }
 }
 
 // half full
@@ -153,8 +165,9 @@ int main(void)
   MX_I2S3_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
+  // starts I2S DMA streams
   HAL_StatusTypeDef status = HAL_I2SEx_TransmitReceive_DMA(&hi2s3, (uint16_t *) dacData, (uint16_t *) NULL, BUFFER_SIZE);
-  t = 0;
+  phase = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
