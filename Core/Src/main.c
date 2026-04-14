@@ -18,11 +18,15 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "stm32f4xx_hal_def.h"
+#include "stm32f4xx_hal_i2s.h"
+#include "stm32f4xx_hal_i2s_ex.h"
 #include "usb_device.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "math.h"
+#include <stdint.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -54,18 +58,19 @@ I2S_HandleTypeDef hi2s3;
 DMA_HandleTypeDef hdma_spi3_tx;
 
 /* USER CODE BEGIN PV */
-int16_t adcData[BUFFER_SIZE]; // buffers to hold DMA read/writes
+//int16_t adcData[BUFFER_SIZE]; // buffers to hold DMA read/writes
 int16_t dacData[BUFFER_SIZE];
-static volatile int16_t *adcBufPtr; // pointers for DMA
+//static volatile int16_t *adcBufPtr; // pointers for DMA
 static volatile int16_t *dacBufPtr = &dacData[0];
 
-static double phase = 0;
+static double phase; // generated sinusoid phase variable
+static double dp;
 
 static int16_t inBuf[CAPACITY];   // input/output circular buffers
 static int16_t outBuf[CAPACITY];
 uint8_t dataReadyFlag;
 
-static volatile int16_t *inBufHead;
+static volatile int16_t *inBufHead; // circular buffer pointers
 static volatile int16_t *inBufTail;
 static int16_t *inBufEnd;
 
@@ -73,8 +78,8 @@ static volatile int16_t *outBufHead;
 static volatile int16_t *outBufTail;
 static int16_t *outBufEnd;
 
-static int inDataReadyFlag = 0;
-static int outDataReadyFlag = 0;
+static int inDataReadyFlag = 0;  // read/writes when there are enough samples in
+static int outDataReadyFlag = 0; // the circular buffers
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -84,48 +89,72 @@ static void MX_DMA_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_I2S3_Init(void);
 /* USER CODE BEGIN PFP */
-
+void process_block();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-static void generate_DMA_block(volatile int16_t* ptr) {  // emulates input DMA; generates input samples to be put on the buffer
-  
-  uint16_t freq = 200; // generated frequency
-  double dp = 2.0 * M_PI * freq / AUDIO_SMPLRT;
-
-  for (int i = 0; i< BUFFER_SIZE/2; i++) {
-    *ptr = (int16_t)(sin(phase)* 32767);
-    phase += dp;
-    if (phase > 2.0 * M_PI)
-      phase -= 2.0 * M_PI;
-    ptr++;
-  }
-}
 
 // half full
+/*
 void HAL_I2SEx_TxRxHalfCpltCallback(I2S_HandleTypeDef *hi2s) {
 
   adcBufPtr = &adcData[0];
   dacBufPtr = &dacData[0];
 
-  generate_DMA_block(adcBufPtr); // generates samples on the buffer
-
   dataReadyFlag = 1;
 }
-
+*/
 // other half full
+/*
 void HAL_I2SEx_TxRxCpltCallback(I2S_HandleTypeDef *hi2s) {
 
     adcBufPtr = &adcData[BUFFER_SIZE/2];
     dacBufPtr = &dacData[BUFFER_SIZE/2];
 
-    generate_DMA_block(adcBufPtr); // generates samples on the buffer
+    dataReadyFlag = 1;
+}
+*/
+void HAL_I2S_TxCpltCallback(I2S_HandleTypeDef *hi2s) {
+    //adcBufPtr = &adcData[BUFFER_SIZE/2];
+    dacBufPtr = &dacData[BUFFER_SIZE/2];
 
     dataReadyFlag = 1;
 }
 
-void processData() {
+void HAL_I2S_TxHalfCpltCallback(I2S_HandleTypeDef *hi2s) {
+  //adcBufPtr = &adcData[0];
+  dacBufPtr = &dacData[0];
+
+  dataReadyFlag = 1;
+
+}
+
+void process_block() {
+
+  static float leftIn, leftOut;
+  static float rightIn, rightOut;
+  
+  for(int i = 0; i < (BUFFER_SIZE/2); i += 2) {
+    //leftIn = (float)adcBufPtr[i]/ 32767.0f;
+    //rightIn = (float)adcBufPtr[i+1]/ 32767.0f;
+
+    // add some processing
+    //leftIn = sin(phase);
+    leftIn = 12000;
+    //rightIn = sin(phase);
+
+    phase += dp;
+    if (phase > 2.0 * M_PI)
+      phase -= 2.0 * M_PI;
+
+    leftOut = leftIn;
+    rightOut = leftIn;
+
+    dacBufPtr[i] = (int16_t)(leftOut * 32767.0f);
+    dacBufPtr[i+1] = (int16_t)(rightOut * 32767.0f);
+  }
+  dataReadyFlag = 0;
 
 }
 
@@ -166,7 +195,10 @@ int main(void)
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
   // starts I2S DMA streams
-  HAL_StatusTypeDef status = HAL_I2SEx_TransmitReceive_DMA(&hi2s3, (uint16_t *) dacData, (uint16_t *) NULL, BUFFER_SIZE);
+  //HAL_StatusTypeDef status = HAL_I2SEx_TransmitReceive_DMA(&hi2s3, (uint16_t *) dacData, (uint16_t *) NULL, BUFFER_SIZE);
+  HAL_StatusTypeDef status = HAL_I2S_Transmit_DMA(&hi2s3, (uint16_t*)dacData, BUFFER_SIZE);
+  uint16_t freq = 200; // generated frequency
+  dp = 2.0 * M_PI * 200 / AUDIO_SMPLRT;
   phase = 0;
   /* USER CODE END 2 */
 
@@ -175,6 +207,9 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+    if (dataReadyFlag) {
+      process_block();
+    }
 
     /* USER CODE BEGIN 3 */
   }
