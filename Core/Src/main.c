@@ -18,10 +18,6 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "cs43l22.h"
-#include "stm32f4xx_hal_def.h"
-#include "stm32f4xx_hal_i2s.h"
-#include "stm32f4xx_hal_i2s_ex.h"
 #include "usb_device.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -186,6 +182,7 @@ int main(void)
 
   /* Configure the system clock */
   SystemClock_Config();
+
   /* USER CODE BEGIN SysInit */
 
   /* USER CODE END SysInit */
@@ -213,9 +210,6 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-    if (dataReadyFlag) {
-      process_block();
-    }
 
     /* USER CODE BEGIN 3 */
   }

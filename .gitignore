@@ -3,3 +3,6 @@ mx.scratch
 !.settings
 .clangd
 .vscode/c_cpp_properties.json
+.codex
+Core/Src/audio_sample.c
+stm32-cs43l22
