@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "cs43l22.h"
 #include "stm32f4xx_hal_def.h"
 #include "stm32f4xx_hal_i2s.h"
 #include "stm32f4xx_hal_i2s_ex.h"
@@ -40,6 +41,7 @@
 #define CAPACITY 1024   // circular buffer size
 #define WINDOW_SIZE 256 // FFT size
 #define AUDIO_SMPLRT 48000 // audio sample rate (temporary)
+#define DAC_ADDR (0x4AU << 1)
 
 #ifndef M_PI
 #    define M_PI 3.14159265358979323846
@@ -63,8 +65,8 @@ int16_t dacData[BUFFER_SIZE];
 //static volatile int16_t *adcBufPtr; // pointers for DMA
 static volatile int16_t *dacBufPtr = &dacData[0];
 
-static double phase; // generated sinusoid phase variable
-static double dp;
+static float phase; // generated sinusoid phase variable
+static float dp;
 
 static int16_t inBuf[CAPACITY];   // input/output circular buffers
 static int16_t outBuf[CAPACITY];
@@ -140,8 +142,8 @@ void process_block() {
     //rightIn = (float)adcBufPtr[i+1]/ 32767.0f;
 
     // add some processing
-    //leftIn = sin(phase);
-    leftIn = 12000;
+    leftIn = sin(phase);
+    //rightIn = 12000;
     //rightIn = sin(phase);
 
     phase += dp;
@@ -155,7 +157,6 @@ void process_block() {
     dacBufPtr[i+1] = (int16_t)(rightOut * 32767.0f);
   }
   dataReadyFlag = 0;
-
 }
 
 /* USER CODE END 0 */
@@ -177,12 +178,10 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
   /* USER CODE END Init */
 
   /* Configure the system clock */
   SystemClock_Config();
-
   /* USER CODE BEGIN SysInit */
 
   /* USER CODE END SysInit */
@@ -197,9 +196,12 @@ int main(void)
   // starts I2S DMA streams
   //HAL_StatusTypeDef status = HAL_I2SEx_TransmitReceive_DMA(&hi2s3, (uint16_t *) dacData, (uint16_t *) NULL, BUFFER_SIZE);
   HAL_StatusTypeDef status = HAL_I2S_Transmit_DMA(&hi2s3, (uint16_t*)dacData, BUFFER_SIZE);
-  uint16_t freq = 200; // generated frequency
-  dp = 2.0 * M_PI * 200 / AUDIO_SMPLRT;
+  uint16_t freq = 1000; // generated frequency
+  dp = 2.0 * M_PI * 1000 / AUDIO_SMPLRT;
   phase = 0;
+  
+  cs43l22_Init(DAC_ADDR, OUTPUT_DEVICE_AUTO, 80, AUDIO_SMPLRT);
+  cs43l22_Play(DAC_ADDR, NULL, 0);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -318,7 +320,7 @@ static void MX_I2S3_Init(void)
   hi2s3.Init.AudioFreq = I2S_AUDIOFREQ_48K;
   hi2s3.Init.CPOL = I2S_CPOL_LOW;
   hi2s3.Init.ClockSource = I2S_CLOCK_PLL;
-  hi2s3.Init.FullDuplexMode = I2S_FULLDUPLEXMODE_ENABLE;
+  hi2s3.Init.FullDuplexMode = I2S_FULLDUPLEXMODE_DISABLE;
   if (HAL_I2S_Init(&hi2s3) != HAL_OK)
   {
     Error_Handler();
