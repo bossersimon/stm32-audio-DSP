@@ -28,6 +28,7 @@
 /* USER CODE BEGIN Includes */
 #include "math.h"
 #include <stdint.h>
+#include "audio_sample.c"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -82,6 +83,10 @@ static int16_t *outBufEnd;
 
 static int inDataReadyFlag = 0;  // read/writes when there are enough samples in
 static int outDataReadyFlag = 0; // the circular buffers
+
+static uint16_t* audiosample = AUDIO_SAMPLE;
+const size_t AUDIO_LENGTH = sizeof(AUDIO_SAMPLE) / sizeof(AUDIO_SAMPLE[0]);
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -136,26 +141,25 @@ void process_block() {
 
   static float leftIn, leftOut;
   static float rightIn, rightOut;
+
+  if (audiosample >= (AUDIO_SAMPLE + AUDIO_LENGTH)) {
+    audiosample = AUDIO_SAMPLE;
+  }
   
   for(int i = 0; i < (BUFFER_SIZE/2); i += 2) {
     //leftIn = (float)adcBufPtr[i]/ 32767.0f;
     //rightIn = (float)adcBufPtr[i+1]/ 32767.0f;
 
-    // add some processing
-    leftIn = sin(phase);
-    //rightIn = 12000;
-    //rightIn = sin(phase);
-
-    phase += dp;
-    if (phase > 2.0 * M_PI)
-      phase -= 2.0 * M_PI;
+    leftIn = audiosample[i];
+    rightIn = audiosample[i+1];
 
     leftOut = leftIn;
-    rightOut = leftIn;
+    rightOut = rightIn;
 
-    dacBufPtr[i] = (int16_t)(leftOut * 32767.0f);
-    dacBufPtr[i+1] = (int16_t)(rightOut * 32767.0f);
+    dacBufPtr[i] = leftOut;
+    dacBufPtr[i+1] =  rightOut;
   }
+  audiosample = audiosample + (BUFFER_SIZE/2);
   dataReadyFlag = 0;
 }
 
