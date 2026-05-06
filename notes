@@ -1,0 +1,36 @@
+
+
+
+LP5907:
+Fixed output voltage
+If power supply is noisy and affects audio quality, consider an intermediate regulator.
+Requires external caps for regulator stability (common for LDO's).
+Cap selecion:
+	The input capacitor must be located a distance of not more than 1 cm from the input pin and returned to a clean analog ground. Any good quality ceramic, tantalum, or film capacitor may be used at the input.
+	The LP5907 is designed specifically to work with a very small ceramic output capacitor, typically 1 μF. A ceramic capacitor (dielectric types X5R or X7R) in the 1 μF to 10 μF range, and with ESR between 5 mΩ to 500 mΩ, is
+suitable in the LP5907 application circuit.
+
+1uF ceramic in the range 20-40mohm easily meets the ESR requirement for stability.
+Best temperature coeff. choice is X7R
+
+
+Remote Capacitor:
+
+There is no need to have a special capacitor close to the output pin if there is already respective capacitors in the system (like a capacitor at the input of supplied part). The remote capacitor feature helps user to minimize the number of capacitors in the system.
+
+As a good design practice, keep the wiring parasitic inductance at a minimum:
+	- which means to use as wide as possible traces from the LDO output to the capacitors
+	- keeping the LDO output trace layer as close to ground layer as possible 
+	- and avoiding vias on the path.
+
+	If there is a need to use vias, implement as many as possible vias between the connection layers. The recommendation is to keep parasitic wiring inductance less than 35 nH.
+	Connections using long trace lengths, narrow trace widths, and/or connections through vias must be avoided.
+These add parasitic inductances and resistance that results in inferior performance especially during transient
+conditions
+
+
+
+
+
+Crystal:
+
