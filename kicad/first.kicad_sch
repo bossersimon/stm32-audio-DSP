@@ -5327,6 +5327,414 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Transistor_BJT:MMBT3904"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MMBT3904"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "NPN Transistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MMBT3904_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MMBT3904_1_1"
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "easyeda2kicad:MMUN2111LT1G"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 0 15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MMUN2111LT1G"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "easyeda2kicad:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR"
+				(at 0 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Digital-Transistors_ON_MMUN2111LT1G_MMUN2111LT1G_C97123.html"
+				(at 0 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "onsemi(安森美)"
+				(at 0 -22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "MMUN2111LT1G"
+				(at 0 -25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C97123"
+				(at 0 -27.94 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Digital Transistors"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MMUN2111LT1G_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -1.52 0) (xy -1.27 0.76) (xy -0.76 -0.76) (xy -0.25 0.76) (xy 0.25 -0.76) (xy 0.76 0.76)
+						(xy 1.27 -0.76) (xy 1.52 0) (xy 2.54 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.29) (xy 5.08 -2.29)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -0.76) (xy 6.6 -1.02) (xy 5.84 -2.03) (xy 5.08 -0.76)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -0.76) (xy 7.62 -2.54) (xy 7.62 -5.08) (xy 2.54 -5.08) (xy 2.54 -4.06) (xy 1.78 -3.81)
+						(xy 3.3 -3.3) (xy 1.78 -2.79) (xy 3.3 -2.29) (xy 1.78 -1.78) (xy 3.3 -1.27) (xy 2.54 -1.02) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 2.54) (xy 5.08 0.76)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -7.62 0 0)
+					(length 5.08)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 10.16 270)
+					(length 5.08)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 -10.16 90)
+					(length 5.08)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -5919,6 +6327,12 @@
 		(uuid "41dafa7d-95a4-4b69-a1d5-86afcaef1b0c")
 	)
 	(junction
+		(at 254 262.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "42924f1c-e5f6-4f40-aaf0-d7e59358ba92")
+	)
+	(junction
 		(at 199.39 248.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6031,6 +6445,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "80498f15-8011-4b07-a21e-9740d9b917ab")
+	)
+	(junction
+		(at 356.87 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "813dac55-babe-4334-84b9-6281188f9bb4")
 	)
 	(junction
 		(at 91.44 63.5)
@@ -6316,6 +6736,16 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 262.89) (xy 265.43 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01a4694d-eccb-437c-95ce-22a2154e340c")
+	)
+	(wire
+		(pts
 			(xy 97.79 154.94) (xy 95.25 154.94)
 		)
 		(stroke
@@ -6443,6 +6873,16 @@
 			(type default)
 		)
 		(uuid "0bc61d55-2eae-4d55-8bcf-927858f8663b")
+	)
+	(wire
+		(pts
+			(xy 273.05 267.97) (xy 273.05 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c0fe2ad-5cb4-4f78-8527-947ee3338032")
 	)
 	(wire
 		(pts
@@ -6773,6 +7213,16 @@
 			(type default)
 		)
 		(uuid "256f7d6b-be36-4cb8-9e6c-6fcb0003b588")
+	)
+	(wire
+		(pts
+			(xy 356.87 151.13) (xy 358.14 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "259519b8-0566-40db-a181-47a821eac956")
 	)
 	(wire
 		(pts
@@ -7133,6 +7583,16 @@
 			(type default)
 		)
 		(uuid "4cd8ab58-22c2-4a6f-be61-b0cc91efbc43")
+	)
+	(wire
+		(pts
+			(xy 356.87 151.13) (xy 356.87 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ced7cd4-a740-4281-85f8-69614119b64e")
 	)
 	(wire
 		(pts
@@ -7706,6 +8166,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 273.05) (xy 254 274.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78ae52b8-e513-467a-8d03-c9321bedb04e")
+	)
+	(wire
+		(pts
 			(xy 67.31 113.03) (xy 67.31 106.68)
 		)
 		(stroke
@@ -7713,6 +8183,16 @@
 			(type default)
 		)
 		(uuid "78c509df-7912-4f92-bf5f-4ccff61b855b")
+	)
+	(wire
+		(pts
+			(xy 254 262.89) (xy 256.54 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a076f8c-9f5b-4ebc-ac78-9e5b12a4655c")
 	)
 	(wire
 		(pts
@@ -8026,6 +8506,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 262.89) (xy 254 265.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90f4475d-8064-4caf-bd41-473534ec3996")
+	)
+	(wire
+		(pts
 			(xy 293.37 189.23) (xy 336.55 189.23)
 		)
 		(stroke
@@ -8206,7 +8696,7 @@
 	)
 	(wire
 		(pts
-			(xy 356.87 148.59) (xy 356.87 154.94)
+			(xy 356.87 148.59) (xy 356.87 151.13)
 		)
 		(stroke
 			(width 0)
@@ -9324,6 +9814,16 @@
 		)
 		(uuid "00f81db0-de2c-4694-8bc4-54540b5a8044")
 	)
+	(label "-V_EE"
+		(at 255.27 276.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "010416d8-862e-48f3-ac8c-dd2031c8d3c0")
+	)
 	(label "I2C1_SDA"
 		(at 295.91 138.43 0)
 		(effects
@@ -9464,6 +9964,16 @@
 		)
 		(uuid "d3e4ed24-ba10-41a2-9255-2b2e744785f6")
 	)
+	(label "needs filtering (low-noise LDO or bead+caps)"
+		(at 358.14 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d53d0c23-9925-404f-8178-9f601151eff1")
+	)
 	(label "HSE_OUT"
 		(at 234.95 95.25 0)
 		(effects
@@ -9483,6 +9993,28 @@
 			(justify left bottom)
 		)
 		(uuid "fb862b81-60f3-41bd-9525-d9467518e90a")
+	)
+	(global_label "AMUTEC"
+		(shape input)
+		(at 367.03 179.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "106737fe-8cc7-48b6-a338-74441c1f169a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 375.2236 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "AINA"
 		(shape input)
@@ -9550,6 +10082,28 @@
 			)
 		)
 	)
+	(global_label "BMUTEC"
+		(shape input)
+		(at 220.98 269.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "27886f3e-d712-41cc-9183-3cb2c56d0858")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 231.4037 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "AOUTA-"
 		(shape input)
 		(at 53.34 224.79 180)
@@ -9568,6 +10122,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "AMUTEC"
+		(shape input)
+		(at 220.98 264.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "37ff883d-8e6d-41a5-9e55-f3490df9ff20")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 231.2223 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -9814,6 +10390,28 @@
 			)
 		)
 	)
+	(global_label "BMUTEC"
+		(shape input)
+		(at 367.03 181.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "93107028-d360-4b2a-86df-61afde8a96b5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 375.3687 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "AOUTB+"
 		(shape input)
 		(at 367.03 191.77 0)
@@ -9958,6 +10556,28 @@
 		(uuid "d9a1a617-012f-4209-b6ae-3498ce185cde")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 375.4656 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VA"
+		(shape input)
+		(at 254 242.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "db5a8bf5-3f30-4336-969e-46cfdcf3a0e5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 259.1624 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10116,6 +10736,106 @@
 			(project ""
 				(path "/580becc7-fa47-4b4d-a43e-4b9316967eb7"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:MMUN2111LT1G")
+		(at 246.38 252.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05ea3245-02ba-417a-8470-cf43e8e37281")
+		(property "Reference" "Q1"
+			(at 255.27 251.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMUN2111LT1G"
+			(at 255.27 253.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR"
+			(at 246.38 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Digital-Transistors_ON_MMUN2111LT1G_MMUN2111LT1G_C97123.html"
+			(at 246.38 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "onsemi(安森美)"
+			(at 246.38 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MMUN2111LT1G"
+			(at 246.38 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C97123"
+			(at 246.38 280.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "a6f7a768-a978-4209-855c-905f752ed783")
+		)
+		(pin "2"
+			(uuid "1e52da6d-dca4-41d5-bcef-84859cc1ca44")
+		)
+		(pin "1"
+			(uuid "df731327-4f2a-4a05-9785-ee99e89bf6a3")
+		)
+		(instances
+			(project ""
+				(path "/580becc7-fa47-4b4d-a43e-4b9316967eb7"
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -10590,6 +11310,82 @@
 			(project "first"
 				(path "/580becc7-fa47-4b4d-a43e-4b9316967eb7"
 					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:MMBT3904")
+		(at 270.51 262.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "178f9061-f94e-41b6-953c-2145c6cee902")
+		(property "Reference" "Q2"
+			(at 275.59 261.6199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBT3904"
+			(at 275.59 264.1599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 275.59 264.795 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf"
+			(at 270.51 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"
+			(at 270.51 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "026d8824-fd5d-474a-93a1-9d62bf89ebe7")
+		)
+		(pin "1"
+			(uuid "791bce55-0fc6-4a2e-afcc-d71a6cb5aba8")
+		)
+		(pin "3"
+			(uuid "bc3181d6-9a03-465e-8858-d2bea3a3d2bd")
+		)
+		(instances
+			(project ""
+				(path "/580becc7-fa47-4b4d-a43e-4b9316967eb7"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -12617,6 +13413,73 @@
 			(project "first"
 				(path "/580becc7-fa47-4b4d-a43e-4b9316967eb7"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 260.35 262.89 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "612c08d6-8fb7-4338-848e-4fb296edca64")
+		(property "Reference" "R27"
+			(at 260.35 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2k"
+			(at 260.604 260.858 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 264.668 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 260.35 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "317da764-d5f6-4d77-9436-499a5f5152d4")
+		)
+		(pin "2"
+			(uuid "c3ea8c1d-6604-4c90-9663-84629017b057")
+		)
+		(instances
+			(project "first"
+				(path "/580becc7-fa47-4b4d-a43e-4b9316967eb7"
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -15094,6 +15957,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 273.05 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a72d8cdf-b00c-4b36-8c17-6a4a0c80f85d")
+		(property "Reference" "#PWR030"
+			(at 273.05 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 273.05 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.05 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 273.05 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e030284e-2a77-435a-90d5-5a48ea5141c0")
+		)
+		(instances
+			(project ""
+				(path "/580becc7-fa47-4b4d-a43e-4b9316967eb7"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 165.1 67.31 0)
 		(unit 1)
@@ -17005,6 +17934,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 254 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d855e37a-8039-4408-92c0-8379da05f6f3")
+		(property "Reference" "R26"
+			(at 255.27 268.732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 255.27 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 252.222 269.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 254 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8f56674-2598-4ba1-93db-01b618640f3a")
+		)
+		(pin "2"
+			(uuid "5ef54657-d602-4416-ba3e-b3f97355e274")
+		)
+		(instances
+			(project ""
+				(path "/580becc7-fa47-4b4d-a43e-4b9316967eb7"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 336.55 135.89 0)
 		(unit 1)
@@ -17136,6 +18134,72 @@
 			(project ""
 				(path "/580becc7-fa47-4b4d-a43e-4b9316967eb7"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 254 274.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e24e1e60-2914-483a-8f85-9523c2a4e881")
+		(property "Reference" "#PWR031"
+			(at 254 280.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 254 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 254 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "09405de0-2277-45ed-8544-40e10420a59f")
+		)
+		(instances
+			(project ""
+				(path "/580becc7-fa47-4b4d-a43e-4b9316967eb7"
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
