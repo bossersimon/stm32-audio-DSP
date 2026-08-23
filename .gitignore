@@ -3,3 +3,9 @@ mx.scratch
 !.settings
 .clangd
 .vscode/c_cpp_properties.json
+
+# KiCad generated files
+kicad/*-backups/
+kicad/fp-info-cache
+kicad/#auto_saved_files#
+kicad/*.lck
