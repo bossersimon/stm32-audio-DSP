@@ -57,8 +57,14 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define ENC1_SW_Pin GPIO_PIN_2
+#define ENC1_SW_GPIO_Port GPIOA
+#define ENC2_SW_Pin GPIO_PIN_5
+#define ENC2_SW_GPIO_Port GPIOA
 #define DAC_RESET_Pin GPIO_PIN_4
 #define DAC_RESET_GPIO_Port GPIOD
+#define ENC3_SW_Pin GPIO_PIN_5
+#define ENC3_SW_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
