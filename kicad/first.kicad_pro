@@ -396,7 +396,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
-      "hop_over_size_choice": 0,
+      "hop_over_size_choice": 3,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -437,13 +437,17 @@
         "uuid": "580becc7-fa47-4b4d-a43e-4b9316967eb7"
       }
     ],
-    "used_designators": "",
+    "used_designators": "R36,#PWR42,U4",
     "variants": []
   },
   "sheets": [
     [
       "580becc7-fa47-4b4d-a43e-4b9316967eb7",
       "first"
+    ],
+    [
+      "7adb74f9-e933-4ca7-8fff-913837d4ebb7",
+      "Inputs"
     ]
   ],
   "text_variables": {},
