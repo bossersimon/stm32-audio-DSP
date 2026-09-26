@@ -437,7 +437,7 @@
         "uuid": "580becc7-fa47-4b4d-a43e-4b9316967eb7"
       }
     ],
-    "used_designators": "SW5,C46-49,J2-4,R36-42,#PWR42-45,U4-5",
+    "used_designators": "SW5,C46-49,J2-4,R36-42,#PWR20,#PWR42-46,U4-5",
     "variants": []
   },
   "sheets": [
