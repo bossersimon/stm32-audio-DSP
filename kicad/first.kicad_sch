@@ -7087,6 +7087,16 @@
 		)
 		(uuid "3b3b95a3-89ee-4264-a189-2576cf327fb2")
 	)
+	(text "AN4488"
+		(exclude_from_sim no)
+		(at 169.418 29.464 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+		)
+		(uuid "799bf35d-26a0-4695-8acc-78ba84b56524")
+	)
 	(text "Analog output filters"
 		(exclude_from_sim no)
 		(at 101.346 213.106 0)
@@ -11841,7 +11851,7 @@
 		(at 184.15 52.07 0)
 		(effects
 			(font
-				(size 0.508 0.508)
+				(size 0.635 0.635)
 			)
 			(justify left bottom)
 		)
@@ -18029,6 +18039,83 @@
 			(project "first"
 				(path "/580becc7-fa47-4b4d-a43e-4b9316967eb7"
 					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3VA")
+		(at 201.93 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6991cca2-d874-4e12-9f20-1842f6713e5e")
+		(property "Reference" "#PWR047"
+			(at 201.93 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3VA"
+			(at 197.866 56.642 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.93 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
+			(at 201.93 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "45873be8-8462-47cc-a773-31275094c953")
+		)
+		(instances
+			(project "first"
+				(path "/580becc7-fa47-4b4d-a43e-4b9316967eb7"
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
