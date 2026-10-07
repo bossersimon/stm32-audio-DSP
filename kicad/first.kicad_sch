@@ -7077,6 +7077,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Pick good LED for 2mA"
+		(exclude_from_sim no)
+		(at 387.604 30.988 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "163d0a11-0849-41b6-8d1b-a9d91971ae77")
+	)
 	(text "Analog input buffer"
 		(exclude_from_sim no)
 		(at 142.494 106.68 0)
@@ -7604,6 +7614,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b05851ec-0d30-4495-901c-d50b6a0fb3ee")
+	)
+	(junction
+		(at 351.79 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4c305e3-d1c8-42ce-81ca-8ed3cab5e216")
 	)
 	(junction
 		(at 300.99 83.82)
@@ -8546,6 +8562,16 @@
 			(type default)
 		)
 		(uuid "2dd71474-dc72-4fc5-85d4-a62be306214e")
+	)
+	(wire
+		(pts
+			(xy 351.79 152.4) (xy 363.22 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e044e68-cacc-4d33-b1b8-89e033fcefec")
 	)
 	(wire
 		(pts
@@ -13662,7 +13688,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k5"
 			(at 375.92 36.8299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22018,7 +22044,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "100n"
 			(at 254 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
