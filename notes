@@ -34,3 +34,43 @@ conditions
 
 Crystal:
 
+
+
+
+
+Capacitors:
+
+MCU
+C1-7, 11:		100n X7R
+C8:			10u  X7R ?
+C9,10:			1u   X7R ?
+
+Crystal
+C13,14 (crystal):	8p, -
+
+LDO
+C14,15: 		1u, -
+
+Codec
+C16,17:			1u, -
+C18,19: 		1u, 10/16V
+C20:			47u, -
+C21:			100n, -
+C22: 			1u, -
+
+Input buffer
+C23,24: 		10u, Polarized SMD aluminum electrolyte
+C25,26:			470p, C0G
+C27,28:			2700p, C0G
+
+
+Output filters:
+C29,35:			2200p, C0G
+C30,36:			6800p, C0G
+C31,37:			470p,  C0G
+C32,38:			1n5,   C0G
+C33,39:			22uF, -
+
+Preamp:
+C40,42,43:			2u2, -
+C41:			16p, -			
