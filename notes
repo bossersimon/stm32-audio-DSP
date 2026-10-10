@@ -1,13 +1,22 @@
 
 
+OPA1678:
+Keep input traces short and run the input traces as far away from the supply lines as possible.
+Place components close to device and to each other to reduce parasitic errors.
+
+9/10:
+
+I decided to go for a single decoupling cap in most cases (often 1u), as parallelling is an old practice. At some places kept the parallel connections because there was a need for a larger bulk cap. In the case of the VCOM (VQ1) pin, I just don't want to risk having extra noise in the audio buffer path.
+
+10/10:
+Used this for all audio conditioning and the preamp. Hopefully it works everywhere, and I don't need an additional package since all op amps are the same.
+
 
 
 TPS7A20:
-
 The device is designed to be stable using low equivalent series resistance (ESR) ceramic capacitors at the input and output
 
 Regardless of the ceramic capacitor type selected, the effective capacitance varies with operating voltage and temperature. As a rule of thumb, expect the effective capacitance to decrease by as much as 50%
-
 
 
 LP5907:
@@ -50,7 +59,7 @@ Capacitors:
 MCU
 C1-7, 11:		100n X7R
 C8:			10u  X7R ?
-C9,10:			1u   X7R ?
+C9,10:			1u   X7R
 
 Crystal
 C13,14 (crystal):	8p, C0G 
@@ -60,27 +69,26 @@ C14,15: 		1u, X7R
 
 Codec
 C16,17:			1u, X7R
-C18,19: 		1u, 10/16V
+C18,19: 		1u, 10/16V X7R
 C20:			47u, Aluminum electrolyte
-C21:			100n, C0G
+C21,23:			100n, C0G
 C22: 			1u,   X7R
-Cx:			100n, C0G /50V+
 
 Input buffer
-C23,24: 		10u,   Aluminum electrolyte
-C25,26:			470p,  C0G
-C27,28:			2700p, C0G
+C24,25: 		47n,   C0G
+C26,27:			470p,  C0G
+C28,29:			2700p, C0G
 
 
 Output filters:
-C29,35:			2200p, C0G
-C30,36:			6800p, C0G
-C31,37:			470p,  C0G
-C32,38:			1n5,   C0G
-C33,34,39,40:		22uF, Aluminum electrolyte 
-C40,42,43:		
-
+C30,36:			2200p, C0G
+C31,37:			6800p, C0G
+C32,38:			470p,  C0G
+C33,39:			1n5,   C0G
+C34,35,40,41:		22uF, Aluminum electrolyte 
 
 Preamp:
-C40,42,43:		2u2, -
-C41:			16p, -			
+C42:			2u2, Aluminum electrolyte
+C43:		 	1u, X5R 16V
+C44:			16p, C0G
+C45: 			100n, C0G 
