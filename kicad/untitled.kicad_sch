@@ -5,7 +5,7 @@
 	(uuid "fa3f8943-98ca-4b67-81f1-c008d6647cff")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Amplifier_Operational:OPA1662DGK"
+		(symbol "Amplifier_Operational:NE5532"
 			(pin_names
 				(offset 0.127)
 			)
@@ -25,7 +25,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "OPA1662DGK"
+			(property "Value" "NE5532"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -36,7 +36,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -47,7 +47,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa1662.pdf"
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ne5532.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -58,7 +58,7 @@
 					)
 				)
 			)
-			(property "Description" "Dual Low-Power, Low-Noise, Low-Distortion, Bipolar-Input SoundPlus Audio Operational Amplifiers, VSSOP-8"
+			(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -79,7 +79,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "dual opamp operational-amplifier"
+			(property "ki_keywords" "dual opamp"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -90,7 +90,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "VSSOP*3x3mm*P0.65mm*"
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -101,7 +101,7 @@
 					)
 				)
 			)
-			(symbol "OPA1662DGK_1_1"
+			(symbol "NE5532_1_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -169,7 +169,7 @@
 					)
 				)
 			)
-			(symbol "OPA1662DGK_2_1"
+			(symbol "NE5532_2_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -237,7 +237,7 @@
 					)
 				)
 			)
-			(symbol "OPA1662DGK_3_1"
+			(symbol "NE5532_3_1"
 				(pin power_in line
 					(at -2.54 -7.62 90)
 					(length 3.81)
@@ -3291,6 +3291,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:NE5532")
+		(at 119.38 147.32 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3715f85a-db6c-47f1-9da5-399c53fcccc0")
+		(property "Reference" "U2"
+			(at 121.666 143.764 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA1678"
+			(at 121.666 141.224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 119.38 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ne5532.pdf"
+			(at 119.38 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8"
+			(at 119.38 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "367d0b47-07c1-4bd4-a0eb-c0ecf1a97804")
+		)
+		(pin "8"
+			(uuid "c559d99b-e2ab-4f33-98ee-940b3b37bbb6")
+		)
+		(pin "5"
+			(uuid "f7aadddb-7012-4496-8f0f-48eabfd63267")
+		)
+		(pin "1"
+			(uuid "180a2a2a-3a72-4d55-8b04-a9f84958ef56")
+		)
+		(pin "4"
+			(uuid "86674512-8abe-4258-ae09-993a601b0a61")
+		)
+		(pin "3"
+			(uuid "b13b1be9-3a4f-4085-94e4-6d21421c1b18")
+		)
+		(pin "7"
+			(uuid "f8628d23-8493-4a2c-ad4a-d01e9d433c40")
+		)
+		(pin "2"
+			(uuid "06010e86-fe72-414a-a269-de3e7bd95e7b")
+		)
+		(instances
+			(project "first"
+				(path "/580becc7-fa47-4b4d-a43e-4b9316967eb7/7adb74f9-e933-4ca7-8fff-913837d4ebb7"
+					(reference "U2")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 59.69 116.84 0)
 		(unit 1)
@@ -4169,104 +4266,6 @@
 			(project "first"
 				(path "/580becc7-fa47-4b4d-a43e-4b9316967eb7/7adb74f9-e933-4ca7-8fff-913837d4ebb7"
 					(reference "#PWR042")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:OPA1662DGK")
-		(at 119.38 147.32 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "fdc1a1aa-86aa-42b6-b4d4-bb9e96881e40")
-		(property "Reference" "U5"
-			(at 119.888 152.146 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "OPA1662DGK"
-			(at 119.888 154.686 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
-			(at 119.38 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa1662.pdf"
-			(at 119.38 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Dual Low-Power, Low-Noise, Low-Distortion, Bipolar-Input SoundPlus Audio Operational Amplifiers, VSSOP-8"
-			(at 119.38 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "884d3d8d-45be-462e-bc4f-1922da4b6ed8")
-		)
-		(pin "2"
-			(uuid "4da2aacc-894f-4cce-a87e-3e943c22c10d")
-		)
-		(pin "7"
-			(uuid "3b3f0861-6b4e-4a51-9648-d33ae01d86b6")
-		)
-		(pin "3"
-			(uuid "b729d373-b934-46aa-918e-a0f94a1abd3e")
-		)
-		(pin "8"
-			(uuid "5bbd0021-ea9d-40f0-845f-d53dc01e307f")
-		)
-		(pin "6"
-			(uuid "fbde16ef-e77d-4885-a3cb-faa44f6d7c10")
-		)
-		(pin "5"
-			(uuid "8aff6153-c7b9-4c4f-b4ae-6ae74d4c55cb")
-		)
-		(pin "1"
-			(uuid "948a91c0-331a-47cf-91c5-eb97a51c0920")
-		)
-		(instances
-			(project "first"
-				(path "/580becc7-fa47-4b4d-a43e-4b9316967eb7/7adb74f9-e933-4ca7-8fff-913837d4ebb7"
-					(reference "U5")
 					(unit 1)
 				)
 			)
