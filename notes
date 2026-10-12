@@ -12,7 +12,6 @@ I decided to go for a single decoupling cap in most cases (often 1u), as paralle
 Used this for all audio conditioning and the preamp. Hopefully it works everywhere, and I don't need an additional package since all op amps are the same.
 
 
-
 TPS7A20:
 The device is designed to be stable using low equivalent series resistance (ESR) ceramic capacitors at the input and output
 
@@ -92,3 +91,5 @@ C42:			2u2, Aluminum electrolyte
 C43:		 	1u, X5R 16V
 C44:			16p, C0G
 C45: 			100n, C0G 
+
+VCAP1/2:		2.2u, X7R
