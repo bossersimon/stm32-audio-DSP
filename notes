@@ -49,47 +49,83 @@ conditions
 
 Crystal:
 
+ABM8
 
+
+Parts:
+
+Codec:		CS4271,			C2151130
+Mutes:  	MMUN2111LT1G, 		C97123
+		MMBT3904, 		C20526
+Encoders:	EC11E09244BS,	       	C470742
+Crystal:	ABM8-16.000MHZ-9-D1G-T 	C6491125
+opamps:		OPA1678IDR		C192421
+regulator:	TPS7A2033PDBVR 		C2862740
 
 
 
 Capacitors:
 
-MCU
-C1-7, 11:		100n X7R
-C8:			10u  X7R ?
-C9,10:			1u   X7R
+MCU, LDO
+C1-7, 11:		100n X7R 16V 0402	C71629	
+C8:			10u  X7R 16V 0603 	C86277
+C9,10,14,15:		1u   X7R 16V 0402	C126521*
 
 Crystal
-C13,14 (crystal):	8p, C0G 
-
-LDO
-C14,15: 		1u, X7R
+C13,14 (crystal):	8p, C0G	     0402	C126516	
 
 Codec
-C16,17:			1u, X7R
-C18,19: 		1u, 10/16V X7R
-C20:			47u, Aluminum electrolyte
-C21,23:			100n, C0G
-C22: 			1u,   X7R
+C16-19,22:		1u, X7R 		C126521*
+C20:			47u, Al elyt		C72513
+C21,23:			100n, X7R    0402	C71629
 
 Input buffer
-C24,25: 		47n,   C0G
-C26,27:			470p,  C0G
-C28,29:			2700p, C0G
+C24,25: 		47n,   C0G   0805	C2182212
+C26,27:			470p,  C0G   0402	C343011
+C28,29:			2700p, C0G   0603	C326759
 
 
 Output filters:
-C30,36:			2200p, C0G
-C31,37:			6800p, C0G
-C32,38:			470p,  C0G
-C33,39:			1n5,   C0G
-C34,35,40,41:		22uF, Aluminum electrolyte 
+C30,36:			2200p, C0G   0603	C342876
+C31,37:			6800p, C0G   0603	C513559
+C32,38:			470p,  C0G   0402	C343011
+C33,39:			1n5,   C0G   0603	C107039
+C34,35,40,41:		22u, Al elyt 		C3356
 
 Preamp:
-C42:			2u2, Aluminum electrolyte
-C43:		 	1u, X5R 16V
-C44:			16p, C0G
-C45: 			100n, C0G 
+C42,45:			2u2, Al elyt		C43242
+C43:		 	1u, 			C126521*
+C44:			16p, C0G     0402	C77590
 
-VCAP1/2:		2.2u, X7R
+VCAP1/2:		2u2, X7R     0402	C72203
+
+
+Resistors:
+
+
+R1,26,28,30,31,32,44	10k	C60490
+R2,36			5k1	C22369457
+R3,14,22,33,34,35	1k5	C25867
+R4,5,41			1M	C26083
+
+~input buffers\
+R6,8			634	C3015979
+R7,9,40			91	C3037161
+\
+
+Output filters, mutes: \
+R10,18,42,43		4k42	C52269
+R11,19			2k32	C82297
+R12,20			1k33	C3016033
+R13,21			715	C113474
+R15,23			4k99	C881019
+R16,24			560	C25126
+R17,25			47k	C25563
+R27,29			2k	C4109
+\
+
+R37,38,39		68k
+
+
+
+
