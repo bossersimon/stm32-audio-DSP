@@ -154,7 +154,7 @@
 	(footprint "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
 		(layer "F.Cu")
 		(uuid "006d3c90-09df-4598-9f98-1fcebe12f5fc")
-		(at 129.75 136.25 90)
+		(at 129.75 134.5 90)
 		(descr "Alps rotary encoder, EC11E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html")
 		(tags "rotary encoder")
 		(property "Reference" "SW2"
@@ -5713,7 +5713,7 @@
 	(footprint "Capacitor_SMD:CP_Elec_4x5.4"
 		(layer "F.Cu")
 		(uuid "3b201c6b-4628-4021-a8d5-8425c6cf88ed")
-		(at 148 113.25)
+		(at 148 111)
 		(descr "SMD capacitor, aluminum electrolytic, Panasonic A5 / Nichicon, 4.0x5.4mm")
 		(tags "capacitor electrolytic")
 		(property "Reference" "C41"
@@ -10905,7 +10905,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "6138566c-143e-461f-916d-4492d9f63856")
-		(at 147.25 117.25 180)
+		(at 147 115.5 180)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R9"
@@ -12118,7 +12118,7 @@
 		(property "Reference" "C20"
 			(at 0 -3.2 90)
 			(layer "F.SilkS")
-			(uuid "ddbf190b-1b2a-49db-b938-726d25ac3826")
+			(uuid "f433cd64-805a-43f8-90e9-aec085892855")
 			(effects
 				(font
 					(size 1 1)
@@ -12129,7 +12129,7 @@
 		(property "Value" "47u"
 			(at 0 3.2 90)
 			(layer "F.Fab")
-			(uuid "4dd11539-670f-40fb-ae7d-c6faaf89d3c4")
+			(uuid "22a3ad1c-ff5f-46aa-a3af-3ca566aa61de")
 			(effects
 				(font
 					(size 1 1)
@@ -12141,7 +12141,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ce57f903-7cea-423f-836f-02ff25362e06")
+			(uuid "998cca0e-be89-4c57-a657-a7943c81dfb9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12152,7 +12152,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "03f2468b-3490-4acd-8217-4b5ccd947f0c")
+			(uuid "51ab28c4-1aca-4025-aa1c-c02fc87240d1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12559,7 +12559,7 @@
 	(footprint "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
 		(layer "F.Cu")
 		(uuid "78f80eec-13f5-4eaf-9a30-edc73127a655")
-		(at 145 136.25 90)
+		(at 144.75 134.5 90)
 		(descr "Alps rotary encoder, EC11E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html")
 		(tags "rotary encoder")
 		(property "Reference" "SW3"
@@ -15859,7 +15859,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "8dc58939-5f3d-43e1-ba7a-68861288902a")
-		(at 168.25 119 -90)
+		(at 168.25 117.25 -90)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R13"
@@ -16019,7 +16019,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "92039eea-7131-4b43-b756-f91aad64a327")
-		(at 166.75 119.009999 -90)
+		(at 166.75 117.259999 -90)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R12"
@@ -16179,7 +16179,7 @@
 	(footprint "LED_SMD:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "92a805fd-57ff-434a-b035-7d164bedaaea")
-		(at 162.5 119)
+		(at 162.5 117.25)
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "LED")
 		(property "Reference" "D4"
@@ -16402,7 +16402,7 @@
 	(footprint "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
 		(layer "F.Cu")
 		(uuid "92b5c857-28cb-4eec-9c5a-3c405c8ad50b")
-		(at 160.25 136.25 90)
+		(at 160.25 134.5 90)
 		(descr "Alps rotary encoder, EC11E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html")
 		(tags "rotary encoder")
 		(property "Reference" "SW4"
@@ -20980,7 +20980,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "b0133e67-2c96-4446-ba12-0beea5fd25c2")
-		(at 162.509999 117.25 180)
+		(at 162.509999 115.5 180)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R10"
@@ -23056,7 +23056,7 @@
 	(footprint "LED_SMD:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "d1a17e35-2a67-4d7a-8a54-76af97fee0fe")
-		(at 132.25 119)
+		(at 132.25 117.25)
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "LED")
 		(property "Reference" "D2"
@@ -26033,7 +26033,7 @@
 	(footprint "LED_SMD:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "e1020a54-cbcd-4c51-8909-0535f6d3b215")
-		(at 147.25 119)
+		(at 147 117.25)
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "LED")
 		(property "Reference" "D3"
@@ -27695,7 +27695,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "f459c8d5-3043-49ef-8a28-b538d4792029")
-		(at 132.25 117.25 180)
+		(at 132.25 115.5 180)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R8"
@@ -29973,7 +29973,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "fdfde452-4eb1-4ab8-a278-cfe5e0532645")
-		(at 165.25 119.009999 -90)
+		(at 165.25 117.259999 -90)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R11"
@@ -33715,16 +33715,16 @@
 		(uuid "defc6457-74fd-47cb-a650-2ea7e610b588")
 	)
 	(segment
-		(start 146.462499 119)
-		(end 146.462499 117.527502)
+		(start 146.212499 117.25)
+		(end 146.212499 115.777502)
 		(width 0.3)
 		(layer "F.Cu")
 		(net "Net-(D3-K)")
 		(uuid "7f688aee-aff5-487c-9b73-f5c4f16c55e3")
 	)
 	(segment
-		(start 146.462499 117.527502)
-		(end 146.740001 117.25)
+		(start 146.212499 115.777502)
+		(end 146.490001 115.5)
 		(width 0.3)
 		(layer "F.Cu")
 		(net "Net-(D3-K)")
@@ -34067,32 +34067,32 @@
 		(uuid "e5cc2155-6f48-4ad5-a06c-6d602feb7d58")
 	)
 	(segment
-		(start 168.25 119.509999)
-		(end 166.009999 121.75)
+		(start 168.25 117.759999)
+		(end 166.009999 120)
 		(width 0.3)
 		(layer "F.Cu")
 		(net "ENC3_SW")
 		(uuid "5afb70a4-8d7e-410e-82aa-6ecabc16d294")
 	)
 	(segment
-		(start 166.009999 121.75)
-		(end 165.25 121.75)
+		(start 166.009999 120)
+		(end 165.25 120)
 		(width 0.3)
 		(layer "F.Cu")
 		(net "ENC3_SW")
 		(uuid "6a10bff7-59d3-4bc1-a8c8-e4312fc86ad1")
 	)
 	(segment
-		(start 161.712499 117.537501)
-		(end 162 117.25)
+		(start 161.712499 115.787501)
+		(end 162 115.5)
 		(width 0.3)
 		(layer "F.Cu")
 		(net "Net-(D4-K)")
 		(uuid "46b9f3e5-d8b1-48fb-8fe5-953953fec6de")
 	)
 	(segment
-		(start 161.712499 119)
-		(end 161.712499 117.537501)
+		(start 161.712499 117.25)
+		(end 161.712499 115.787501)
 		(width 0.3)
 		(layer "F.Cu")
 		(net "Net-(D4-K)")
@@ -34323,16 +34323,16 @@
 		(uuid "900a5ce8-efb7-4359-90b2-3c48435894fe")
 	)
 	(segment
-		(start 131.462499 119)
-		(end 131.462499 117.527502)
+		(start 131.462499 117.25)
+		(end 131.462499 115.777502)
 		(width 0.3)
 		(layer "F.Cu")
 		(net "Net-(D2-K)")
 		(uuid "5b6c0732-0932-4536-bd57-17968d605b9e")
 	)
 	(segment
-		(start 131.462499 117.527502)
-		(end 131.740001 117.25)
+		(start 131.462499 115.777502)
+		(end 131.740001 115.5)
 		(width 0.3)
 		(layer "F.Cu")
 		(net "Net-(D2-K)")
