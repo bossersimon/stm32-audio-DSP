@@ -1537,7 +1537,7 @@
 		(uuid "2098ba33-51e4-48aa-b2e7-876e49da3136")
 	)
 	(junction
-		(at 49.53 152.4)
+		(at 62.23 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2905d268-a917-4ab1-bcc1-251192a452b0")
@@ -1603,13 +1603,13 @@
 		(uuid "7ea93866-d620-4a10-86e5-adb7d2d8bc7c")
 	)
 	(junction
-		(at 45.72 176.53)
+		(at 58.42 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "81f407da-b377-4bab-8d60-c80cc47530d7")
 	)
 	(junction
-		(at 45.72 152.4)
+		(at 58.42 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "862afca3-7790-4458-a8b7-09d6001c5008")
@@ -1645,7 +1645,7 @@
 		(uuid "9c3cae5c-9355-4125-a75a-dffb2b8aa58b")
 	)
 	(junction
-		(at 40.64 176.53)
+		(at 53.34 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9c6cd0a4-fe8f-462b-90c1-3ef4bbc0affb")
@@ -1806,7 +1806,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 152.4) (xy 45.72 157.48)
+			(xy 58.42 125.73) (xy 58.42 130.81)
 		)
 		(stroke
 			(width 0)
@@ -1856,7 +1856,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 172.72) (xy 30.48 176.53)
+			(xy 43.18 146.05) (xy 43.18 149.86)
 		)
 		(stroke
 			(width 0)
@@ -1866,7 +1866,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 172.72) (xy 45.72 176.53)
+			(xy 58.42 146.05) (xy 58.42 149.86)
 		)
 		(stroke
 			(width 0)
@@ -1876,7 +1876,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 157.48) (xy 62.23 152.4)
+			(xy 74.93 130.81) (xy 74.93 125.73)
 		)
 		(stroke
 			(width 0)
@@ -2036,7 +2036,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 157.48) (xy 30.48 152.4)
+			(xy 43.18 130.81) (xy 43.18 125.73)
 		)
 		(stroke
 			(width 0)
@@ -2266,7 +2266,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 176.53) (xy 40.64 176.53)
+			(xy 43.18 149.86) (xy 53.34 149.86)
 		)
 		(stroke
 			(width 0)
@@ -2356,7 +2356,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 172.72) (xy 62.23 176.53)
+			(xy 74.93 146.05) (xy 74.93 149.86)
 		)
 		(stroke
 			(width 0)
@@ -2496,7 +2496,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 152.4) (xy 45.72 152.4)
+			(xy 62.23 125.73) (xy 58.42 125.73)
 		)
 		(stroke
 			(width 0)
@@ -2566,7 +2566,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 176.53) (xy 45.72 176.53)
+			(xy 53.34 149.86) (xy 58.42 149.86)
 		)
 		(stroke
 			(width 0)
@@ -2636,7 +2636,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 176.53) (xy 40.64 179.07)
+			(xy 53.34 149.86) (xy 53.34 152.4)
 		)
 		(stroke
 			(width 0)
@@ -2866,7 +2866,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 152.4) (xy 49.53 152.4)
+			(xy 74.93 125.73) (xy 62.23 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3276,7 +3276,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 152.4) (xy 45.72 152.4)
+			(xy 43.18 125.73) (xy 58.42 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3286,7 +3286,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 176.53) (xy 45.72 176.53)
+			(xy 74.93 149.86) (xy 58.42 149.86)
 		)
 		(stroke
 			(width 0)
@@ -5782,7 +5782,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:OPA1678")
-		(at 33.02 165.1 0)
+		(at 45.72 138.43 0)
 		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5792,7 +5792,7 @@
 		(dnp no)
 		(uuid "60c8d549-a16b-4da6-b81c-24a8cfccb1f4")
 		(property "Reference" "U4"
-			(at 32.512 167.386 0)
+			(at 45.212 140.716 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5803,7 +5803,7 @@
 			)
 		)
 		(property "Value" "OPA1678"
-			(at 32.258 164.592 0)
+			(at 44.958 137.922 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5814,7 +5814,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 33.02 165.1 0)
+			(at 45.72 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5825,7 +5825,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa1678.pdf"
-			(at 33.02 165.1 0)
+			(at 45.72 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5836,7 +5836,7 @@
 			)
 		)
 		(property "Description" "Low-Distortion Audio Operational Amplifiers, SOIC-8/VSSOP-8"
-			(at 33.02 165.1 0)
+			(at 45.72 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7168,7 +7168,7 @@
 		(lib_id "Amplifier_Operational:OPA1678")
 		(at 182.88 107.95 0)
 		(mirror x)
-		(unit 2)
+		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7258,7 +7258,7 @@
 			(project "first"
 				(path "/820f84be-8ed9-43fe-8cf8-9ca6f73c98d0"
 					(reference "U6")
-					(unit 2)
+					(unit 1)
 				)
 			)
 		)
@@ -7422,7 +7422,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:OPA1678")
-		(at 43.18 165.1 0)
+		(at 55.88 138.43 0)
 		(mirror y)
 		(unit 3)
 		(body_style 1)
@@ -7433,7 +7433,7 @@
 		(dnp no)
 		(uuid "bad44304-2f51-4eaf-b552-396ab334da44")
 		(property "Reference" "U5"
-			(at 46.99 166.3701 0)
+			(at 59.69 139.7001 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7444,7 +7444,7 @@
 			)
 		)
 		(property "Value" "OPA1678"
-			(at 46.99 163.8301 0)
+			(at 59.69 137.1601 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7455,7 +7455,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 43.18 165.1 0)
+			(at 55.88 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7466,7 +7466,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa1678.pdf"
-			(at 43.18 165.1 0)
+			(at 55.88 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7477,7 +7477,7 @@
 			)
 		)
 		(property "Description" "Low-Distortion Audio Operational Amplifiers, SOIC-8/VSSOP-8"
-			(at 43.18 165.1 0)
+			(at 55.88 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8156,7 +8156,7 @@
 		(lib_id "Amplifier_Operational:OPA1678")
 		(at 182.88 44.45 0)
 		(mirror x)
-		(unit 1)
+		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8246,7 +8246,7 @@
 			(project "first"
 				(path "/820f84be-8ed9-43fe-8cf8-9ca6f73c98d0"
 					(reference "U6")
-					(unit 1)
+					(unit 2)
 				)
 			)
 		)
@@ -8808,7 +8808,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 40.64 179.07 0)
+		(at 53.34 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8819,7 +8819,7 @@
 		(fields_autoplaced yes)
 		(uuid "f117f3fa-ce59-49dc-b517-f45deb37687c")
 		(property "Reference" "#PWR052"
-			(at 40.64 185.42 0)
+			(at 53.34 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8830,7 +8830,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 40.64 184.15 0)
+			(at 53.34 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8841,7 +8841,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 40.64 179.07 0)
+			(at 53.34 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8852,7 +8852,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 179.07 0)
+			(at 53.34 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8863,7 +8863,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 40.64 179.07 0)
+			(at 53.34 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9045,7 +9045,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:OPA1678")
-		(at 59.69 165.1 0)
+		(at 72.39 138.43 0)
 		(mirror y)
 		(unit 3)
 		(body_style 1)
@@ -9056,7 +9056,7 @@
 		(dnp no)
 		(uuid "f73c381c-61a6-4b0a-99b4-89bfcbe253ac")
 		(property "Reference" "U6"
-			(at 64.77 166.116 0)
+			(at 77.47 139.446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9067,7 +9067,7 @@
 			)
 		)
 		(property "Value" "OPA1678"
-			(at 64.77 163.83 0)
+			(at 77.47 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9078,7 +9078,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 59.69 165.1 0)
+			(at 72.39 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9089,7 +9089,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa1678.pdf"
-			(at 59.69 165.1 0)
+			(at 72.39 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9100,7 +9100,7 @@
 			)
 		)
 		(property "Description" "Low-Distortion Audio Operational Amplifiers, SOIC-8/VSSOP-8"
-			(at 59.69 165.1 0)
+			(at 72.39 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9382,7 +9382,7 @@
 	)
 	(symbol
 		(lib_id "power:+5VA")
-		(at 49.53 152.4 0)
+		(at 62.23 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9393,7 +9393,7 @@
 		(fields_autoplaced yes)
 		(uuid "fffbfdca-d01e-4d1d-a9d7-619c19f84512")
 		(property "Reference" "#PWR053"
-			(at 49.53 156.21 0)
+			(at 62.23 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9404,7 +9404,7 @@
 			)
 		)
 		(property "Value" "+5VA"
-			(at 49.53 147.32 0)
+			(at 62.23 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9414,7 +9414,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 152.4 0)
+			(at 62.23 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9425,7 +9425,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 152.4 0)
+			(at 62.23 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9436,7 +9436,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5VA\""
-			(at 49.53 152.4 0)
+			(at 62.23 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
