@@ -1955,7 +1955,7 @@
 	)
 	(text "Line in"
 		(exclude_from_sim no)
-		(at 61.214 101.6 0)
+		(at 28.194 97.79 0)
 		(effects
 			(font
 				(size 1.524 1.524)
