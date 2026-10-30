@@ -731,19 +731,9 @@
         "filename": "first.kicad_sch",
         "name": "first",
         "uuid": "580becc7-fa47-4b4d-a43e-4b9316967eb7"
-      },
-      {
-        "filename": "audio_io.kicad_sch",
-        "name": "audio_IO",
-        "uuid": "6fe43273-25d2-4fb4-87c9-7fb2c9dc2bbb"
-      },
-      {
-        "filename": "audio_conditioning.kicad_sch",
-        "name": "audio_conditioning",
-        "uuid": "820f84be-8ed9-43fe-8cf8-9ca6f73c98d0"
       }
     ],
-    "used_designators": "U4-10,Q1-8,#PWR1,#PWR3,#PWR17,#PWR20-24,#PWR42-78,Y2,FB3,AUDIO1,R4,R7,R14-19,R36-71,J2-10,C28-29,C42-65,SW1,SW5-6,#FLG1-4,CN1-2,RV1",
+    "used_designators": "U4-10,Q1-8,#PWR1,#PWR3,#PWR17,#PWR20-24,#PWR42-83,Y2,FB3,AUDIO1,R4,R7,R14-71,J2-11,C24-65,SW1,SW5-6,#FLG1-4,CN1-2,RV1",
     "variants": []
   },
   "sheets": [
@@ -752,12 +742,12 @@
       "first"
     ],
     [
-      "820f84be-8ed9-43fe-8cf8-9ca6f73c98d0",
+      "7b038eb1-e521-4241-81ca-2bf0f02e1c70",
       "audio_conditioning"
     ],
     [
-      "6fe43273-25d2-4fb4-87c9-7fb2c9dc2bbb",
-      "audio_IO"
+      "1832d860-60f9-45f0-8c54-2dfb8fc99a07",
+      "audio_io"
     ]
   ],
   "text_variables": {},
