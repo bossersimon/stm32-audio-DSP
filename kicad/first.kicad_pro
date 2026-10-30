@@ -734,7 +734,7 @@
       },
       {
         "filename": "audio_io.kicad_sch",
-        "name": "audio_IO",
+        "name": "audio_io",
         "uuid": "6fe43273-25d2-4fb4-87c9-7fb2c9dc2bbb"
       },
       {
@@ -743,7 +743,7 @@
         "uuid": "820f84be-8ed9-43fe-8cf8-9ca6f73c98d0"
       }
     ],
-    "used_designators": "U4-9,Q3,Q5-8,#PWR1,#PWR3,#PWR17,#PWR20-24,#PWR42-78,Y2,FB3,AUDIO1,R4,R7,R36-70,J2-10,C28-29,C42-65,SW1,SW5-6,#FLG1-4,CN1-2,RV1",
+    "used_designators": "U4-9,Q3,Q5-8,#PWR1,#PWR3,#PWR17,#PWR20-24,#PWR42-78,Y2,FB3,AUDIO1,R4,R7,R14-19,R36-70,J2-10,C28-29,C42-65,SW1,SW5-6,#FLG1-4,CN1-2,RV1",
     "variants": []
   },
   "sheets": [
@@ -757,7 +757,7 @@
     ],
     [
       "6fe43273-25d2-4fb4-87c9-7fb2c9dc2bbb",
-      "audio_IO"
+      "audio_io"
     ]
   ],
   "text_variables": {},
