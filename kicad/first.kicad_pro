@@ -60,13 +60,13 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.3,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
+          "min_thickness": 0.2,
           "pad_connection": 1,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.5,
-          "thermal_relief_spoke_width": 0.5
+          "thermal_relief_gap": 0.4,
+          "thermal_relief_spoke_width": 0.25
         }
       },
       "diff_pair_dimensions": [
@@ -152,7 +152,7 @@
       "rules": {
         "max_error": 0.005,
         "min_clearance": 0.1,
-        "min_connection": 0.25,
+        "min_connection": 0.2,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.35,
@@ -835,7 +835,7 @@
         "uuid": "580becc7-fa47-4b4d-a43e-4b9316967eb7"
       }
     ],
-    "used_designators": "U4-10,Q1-8,#PWR1,#PWR3,#PWR17,#PWR20-24,#PWR42-83,Y2,FB3,AUDIO1,R4,R7,R14-71,J2-11,C24-65,SW1,SW5-6,#FLG1-4,CN1-2,RV1",
+    "used_designators": "FID1-3,#FLG1-4,SW1,SW5-6,C24-65,CN1-2,J2-11,R4,R7,R14-71,RV1,FB3,AUDIO1,Y2,#PWR1,#PWR3,#PWR17,#PWR20-24,#PWR42-83,Q1-8,U4-10",
     "variants": []
   },
   "sheets": [
