@@ -542,6 +542,7 @@
         "pcb_color": "rgb(72, 72, 72)",
         "priority": 7,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
         "tuning_profile": ""
       },
       {
@@ -549,6 +550,7 @@
         "pcb_color": "rgb(194, 0, 194)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
         "tuning_profile": ""
       },
       {
@@ -556,6 +558,7 @@
         "pcb_color": "rgb(191, 56, 255)",
         "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
         "tuning_profile": ""
       },
       {
@@ -563,6 +566,7 @@
         "pcb_color": "rgb(255, 0, 0)",
         "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
         "tuning_profile": ""
       },
       {
@@ -570,6 +574,7 @@
         "pcb_color": "rgb(72, 255, 176)",
         "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
         "tuning_profile": ""
       },
       {
@@ -577,6 +582,7 @@
         "pcb_color": "rgb(56, 180, 255)",
         "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
         "tuning_profile": ""
       },
       {
@@ -584,6 +590,7 @@
         "pcb_color": "rgb(24, 90, 255)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
         "tuning_profile": ""
       },
       {
@@ -591,6 +598,7 @@
         "pcb_color": "rgb(255, 178, 84)",
         "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
         "tuning_profile": ""
       }
     ],
@@ -606,6 +614,21 @@
         "GPIO"
       ],
       "/D4": [
+        "GPIO"
+      ],
+      "/PB0": [
+        "GPIO"
+      ],
+      "/PB1": [
+        "GPIO"
+      ],
+      "/PC5": [
+        "GPIO"
+      ],
+      "/PE7": [
+        "GPIO"
+      ],
+      "/PE8": [
         "GPIO"
       ],
       "VBUS": [
@@ -835,7 +858,7 @@
         "uuid": "580becc7-fa47-4b4d-a43e-4b9316967eb7"
       }
     ],
-    "used_designators": "FID1-3,#FLG1-4,SW1,SW5-6,C24-65,CN1-2,J2-11,R4,R7,R14-71,RV1,FB3,AUDIO1,Y2,#PWR1,#PWR3,#PWR17,#PWR20-24,#PWR42-83,Q1-8,U4-10",
+    "used_designators": "Q1-8,U4-10,FID1-3,#FLG1-4,SW1,SW5-6,C24-65,CN1-2,J2-11,R4,R7,R14-71,RV1,FB3,#PWR1,#PWR3,#PWR17,#PWR20-25,#PWR42-83,AUDIO1,Y2",
     "variants": []
   },
   "sheets": [
